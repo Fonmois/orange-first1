@@ -360,6 +360,7 @@
             max-width: 1280px;
             width: 1024px;
         }
+        
         .header-bg {
             /* 640x533 */
             background-size: 100% auto;
@@ -426,23 +427,14 @@
             font-size: 20px;
         }
         .about__brand-more::before  {
-            content: "";
-            position: absolute;
-            left: 7%;
-            bottom: -1px;
             width: 155px;
             height: 12px;
-            transform: translateX(-10%);
-            border-radius: 15px;
-            background: #FDF1B7;
-            z-index: -1;
         }
         .about__audience-more::before  {
-
             width: 155px;
             height: 12px;
         }
- 
+
     }
   
     @media only screen and (min-width: 1281px) {
@@ -453,7 +445,10 @@
         .nav-block a {
             margin-right: 50px;
         }
-
+        ul.nav-block.footer-nav a{
+            margin-right: 0;
+            font-size: 22px;
+        }
         .button {
             font-size: 16px;
             width: 145px;
@@ -468,7 +463,6 @@
             margin-top: 113px;
                 height: fit-content;
                 left: 48%;
-            
         }
         .wrapper {
             max-width: 1440px;
@@ -518,13 +512,19 @@
             column-gap: 51px;
         }
         .about__title {
-            padding-top: 90px;
+            max-width: 420px;
+            padding-top: 125px;
+            font-size: 37px;
         }
         .about__title-design {
             font-size: 32px;
         }
         .about-content-bg {
             padding-top: 380px;
+        }
+        p.text-about {
+            width: 450px;
+            font-size: 18px;
         }
         .gallery {
             width: 1440px;
@@ -635,6 +635,6 @@
     }
 
     /* @media screen and (min-width: 320px) and (max-width: 1024px) and (orientation: landscape) { html { transform: rotate(-90deg); transform-origin: left top; width: 100vh; overflow-x: hidden; position: absolute; top: 100%; left: 0; } } */
-    @media only screen and (min-width: 415px) and (max-width:865px) and (orientation: landscape)  {
-        body{display:none} html:before{content:'Переверните устройство в портретный режим или откройте сайт с компьютера.';position:fixed;top:0;left:0;right:0;bottom:0;margin:auto;background:#fff;z-index:999;text-align:center;width:80%;height:100px} 
-        }
+        @media only screen and (min-width: 415px) and (max-width:865px) and (orientation: landscape)  {
+            body{display:none} html:before{content:'Return your device in the portrait mod or open site on the computer.';position:fixed;top:0;left:0;right:0;bottom:0;margin:auto;background:#fff;z-index:999;text-align:center;width:80%;height:100px} 
+            }
