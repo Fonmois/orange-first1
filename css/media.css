@@ -1,0 +1,640 @@
+    /* default styles here for older browsers.
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+    @media only screen and (min-width: 960px) {
+        /* styles for browsers larger than 960px; */
+    }
+    @media only screen and (min-width: 1440px) {
+        /* styles for browsers larger than 1440px; */
+    }
+    @media only screen and (min-width: 2000px) {
+        /* for sumo sized (mac) screens */
+    }
+
+        /* .open {
+            width: 270px;
+        } */
+
+
+
+    @media only screen and (min-device-width: 424px) {
+
+        .nav__menu {
+            height: 19px;
+            transform: scale(1.1);
+            margin: auto 0;
+        }
+        .header__logo-img {
+            height: 35px;
+        }
+        .container {
+            padding: 0 15px;
+            width: 400px;
+        }
+        .header_title { 
+            font-size: 40px;
+        }
+        .header__title-icon {
+            margin-top: 130px;
+        }
+        .about-content-bg {
+            padding-top: 470px;
+        }
+        .about__title-design {
+            font-size: 30px;
+        }   
+        .about__text-design {
+            font-size: 18px;
+        }
+    }
+
+    @media only screen and (min-device-width: 479px) {
+        .header-bg {
+            height: 108vh;
+        }
+        .open {
+            font-size: 22px;
+            width: 371px;
+            height: 290px;
+        }
+        .text {
+            font-size: 22px;
+        }
+        .header_title { 
+            font-size: 46px;
+        }
+        .container {
+            padding: 0 23px;
+            width: 420px;
+        }
+        .header__title-icon {
+            margin-top: 150px;
+        }
+        .about-content-bg {
+            padding-top: 470px;
+        }
+        .about__title-design {
+            font-size: 33px;
+        }   
+        .about__text-design {
+            font-size: 22px;
+        }
+    }
+
+    @media only screen and (min-device-width: 541px) {
+
+
+
+        .button {
+            font-size: 15px;
+            width: 120px;
+            height: 45px;
+            color: #2A3644;;
+            background-color: hsl(0, 0%, 100%)
+        }
+        button.button:hover {
+            background-color:#6ECEFE;
+            color: hsl(0, 0%, 100%);
+            transition: 0.2s ease-in;
+        }
+        button.button:active {
+            padding-top: 3px;
+        }
+        .desktop-flex {
+            display: flex;
+            justify-content: space-between
+        }
+        .header__logo-img {
+            height: 24px;
+        }
+        .nav-block {
+            display: flex;
+            flex-direction:row;
+            /* text-align:right; */
+            padding-top: 19px;
+            row-gap: 30px; 
+            align-items: center;
+        }
+         .nav-block a {
+            color: hsl(0, 0%, 100%);
+            margin-right: 20px;
+        }
+        .d-none {
+            display: block;
+        }
+        .d-enable {
+            display: none !important;
+        }
+        .container {
+            width: 640px;
+        }
+        .testimonials  {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 768px;
+            /* max-width: 100vh;
+            max-width: 141.7%; */
+        }
+        .about {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            /* align-items: center;
+            justify-content: center; */
+        }
+        .about-content {
+            height: 400px;
+        }
+        .bg {
+            padding: 0 0;
+            background-position: center;
+            height: 720px;
+            max-width: 141.7%;
+            background-size: cover;
+        }
+        .image {
+            max-width: 101.35vh;;
+            height: 768px;
+            width: 768px;
+            position: static;
+        }
+        .bg1 {
+
+            background: url(../images/desktop/image-transform.jpg);
+            height: 600px;        
+            background-position: center;
+        }
+        .bg2 {
+            background-image: url(../images/desktop/image-stand-out.jpg);
+            height: 600px;
+        }
+        .bg3 {
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+        }
+        .bg4 {
+            background-image: url(../images/desktop/image-photography.jpg);
+        }
+        .wrapper {
+            padding: 0 0;
+        }
+        .wrapper-about {
+            padding-bottom: 0;
+        }
+        .wrapper-about-end {
+            padding-bottom: 0;
+        }
+        .footer-wrapper {
+            max-width: 100vh;
+            width: 768px;
+        }
+        .client__title {
+            font-size: 22px;
+        }
+        .client__name {
+            font-size: 22px;
+        }
+        .client__profession {
+            font-size: 18px;
+        }
+        .header-bg {
+            background-image: url(../images/desktop/image-header.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 768px;
+            height: 600px;
+            position: static;
+        }        
+        .header_title {
+            display: block !important;
+            max-width: 654px;
+        }
+        .header__title-icon {
+            display: block !important;
+            margin-top: 50px;
+            left: 47%;
+        }
+        .photo{
+            height: 100px;
+            width: 100px;
+        }
+        .gallery {
+            width: 768px;
+        }
+        .gallery1, .gallery2, .gallery3, .gallery4 {
+            width: 25%;
+            height: 25%;
+        }
+        .footer-wrapper {
+            max-width: 101.35vh;
+        }
+        .footer-nav {
+            padding-top: 0;
+        }
+        .footer-nav a{
+            color: hsl(168, 34%, 41%);
+            margin: 0 0;
+        }
+    }
+
+
+
+    @media only screen and (min-width: 769px) {
+        
+        .container {                 
+            padding: 0 0;
+            width: 700px;  
+            /* width: 1024px; */
+        }
+        .wrapper-about {      
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 0px; 
+        }       
+        .header-bg {
+            background-size: cover;
+            background-position: center center;
+            /* background-size: 100% auto; */
+             /* Ширина и длина header background */ 
+            height: 569px;
+            width: 1024px;        
+        }        header {
+            background-color: #3DBEFF;
+        }
+        .header_title {
+            max-width: 900px;
+        }
+        .about {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }      
+        .container-desing:nth-of-type(2) {
+            order: -1;
+        }
+        .about-content {
+            text-align: left;
+            padding: 32px 7px;
+        }  
+        .about-content-bg {
+            padding-bottom: 0px;
+            padding-top: 245px;
+        }
+        .about__title-design{
+            font-size: 24px;
+        }
+        .about__text-design {
+            font-size: 18px;
+        }
+        .bg, .image, .bg1, .bg2, .bg3, .bg4, .about-content{
+            max-width: 100%;
+           /* Ширина и длина изображений в гриде, берется половина ширины background(высчитывается в калькуляторе пропорций) */
+            width: 512px;
+            height: 427px;
+            background-size: 100% auto;
+            margin: 0 auto;
+            position: unset;         
+        }
+        .container-desing {
+            width: 384px;
+        }              
+        .testimonials {
+            width: 1024px;
+        }
+        .footer-wrapper {
+            width: 1024px;
+            max-width: 171vh;
+        }
+        .gallery {
+            margin-left: auto;
+            margin-right: auto;
+            
+            width: 1024px;
+        }
+        .gallery1{
+            content: url(../images/desktop/image-gallery-milkbottles.jpg);
+        }
+        .gallery2{
+            content: url(../images/desktop/image-gallery-orange.jpg);
+        }
+        .gallery3{
+            content: url(../images/desktop/image-gallery-cone.jpg);
+        }
+        .gallery4{
+            content: url(../images/desktop/image-gallery-sugarcubes.jpg);
+        }
+    }
+
+    @media only screen and (min-width: 1025px) {
+        
+        .header_title {
+            max-width: 1024px;
+        }
+        .header__title-icon {
+            margin-top: 85px;
+        }
+        .wrapper {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .wrapper-about {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .about__title {
+            max-width: 350px;
+            padding-top: 60px;
+        }
+        .container {
+            max-width: 1280px;
+            width: 1024px;
+        }
+        .header-bg {
+            /* 640x533 */
+            background-size: 100% auto;
+             /* Ширина и длина header background */ 
+            height: 711px;
+            max-width: 1280px;
+            width: 1280px;    
+        }   
+        .about-content-bg {
+            padding-top: 320px;
+        }
+        .bg, .image, .bg1, .bg2, .bg3, .bg4, .about-content{
+            /* max-width: 1280px; */
+           /* Ширина и длина изображений в гриде, берется половина ширины background(высчитывается в калькуляторе пропорций) */
+            width: 640px;
+            height: 533px;
+            background-size: 100% auto;
+            margin: 0 auto;
+            position: unset;         
+        }
+        .testimonials {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1280px;
+        }    
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100%;
+            column-gap: 40px;
+        }
+        .photo {
+            width: 70px;
+            height: 70px;
+        }
+        .gallery {
+            width: 1280px;
+        }
+        .footer-wrapper {
+            width:1280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* .text {
+            font-size: 18px;
+        } */
+        p.text.graydark__text {
+            font-size: 17px;
+        }
+        .container-desing {
+            width: 420px;
+        }
+        .text {
+            font-size: 20px;
+        }
+        .client__name {
+            font-size: 20px;
+        }
+        .client__profession {
+            font-size: 16px;
+        }
+        body {
+            font-size: 20px;
+        }
+        .about__brand-more::before  {
+            content: "";
+            position: absolute;
+            left: 7%;
+            bottom: -1px;
+            width: 155px;
+            height: 12px;
+            transform: translateX(-10%);
+            border-radius: 15px;
+            background: #FDF1B7;
+            z-index: -1;
+        }
+        .about__audience-more::before  {
+
+            width: 155px;
+            height: 12px;
+        }
+ 
+    }
+  
+    @media only screen and (min-width: 1281px) {
+        
+        img.header__logo-img {
+            height: 35px;
+        }
+        .nav-block a {
+            margin-right: 50px;
+        }
+
+        .button {
+            font-size: 16px;
+            width: 145px;
+            height: 55px;
+        }
+        .header_title {
+            max-width: 1350px;
+            font-size: 60px;
+            letter-spacing: 10px;
+        }
+        .header__title-icon {
+            margin-top: 113px;
+                height: fit-content;
+                left: 48%;
+            
+        }
+        .wrapper {
+            max-width: 1440px;
+        }
+        .wrapper-about {
+            max-width: 1440px;
+        }
+        .about {
+            max-width: 1440px;;
+        }
+        .about__title {
+            max-width: 350px;
+            padding-top: 60px;
+        }
+        .container {
+            max-width: 1440px;
+              width: 1350px;
+        }
+        .header-bg {
+            /* 640x533 */
+            background-size: 100% auto;
+             /* Ширина и длина header background */ 
+            height: 800px;
+            max-width: 1440px;
+            width: 1440px;;    
+        }   
+        .about-content-bg {
+            padding-top: 320px;
+        }
+        .bg, .image, .bg1, .bg2, .bg3, .bg4, .about-content{
+            /* max-width: 1280px; */
+           /* Ширина и длина изображений в гриде, берется половина ширины background(высчитывается в калькуляторе пропорций) */
+            width: 720px;
+            height: 600px;
+            background-size: 100% auto;
+            margin: 0 auto;
+            position: unset;         
+        }
+        .testimonials {
+            width: 1440px;
+            height: 778px;
+        }    
+        .client__title {
+            margin-bottom: 85px;
+        }
+        .flex {
+            column-gap: 51px;
+        }
+        .about__title {
+            padding-top: 90px;
+        }
+        .about__title-design {
+            font-size: 32px;
+        }
+        .about-content-bg {
+            padding-top: 380px;
+        }
+        .gallery {
+            width: 1440px;
+        }
+        .footer-wrapper {
+            width:1440px;
+        }
+
+        p.text.graydark__text {
+            font-size: 18px;
+        }
+        .container-desing {
+            width: 420px;
+        }
+        .text {
+            font-size: 20px;
+        }
+        .text p {
+            margin-bottom: 76px;
+        }
+        .client__name {
+            font-size: 22px;
+        }
+        .client__profession {
+            font-size: 14px;
+        }
+        body {
+            font-size: 18px;
+        }
+        body a {
+            font-size: 20px;
+        }
+        .footer-logo {
+            padding-bottom: 46px;
+        }
+        .footer__logo-img {
+            height: 35px;
+        }
+        /* .footer-nav { 
+            padding-bottom: 73px;
+        } */
+        img {
+            height: 21px;
+        }  
+        a.about__brand-more {
+            font-size: 16px;
+        }
+        a.about__audience-more {
+            font-size: 16px;
+        }
+        .about__brand-more::before  {
+            width: 126px;
+            height: 11px;
+        }
+        .about__audience-more::before  {
+            width: 126px;
+            height: 11px;
+        }
+ 
+    }
+
+    
+
+    @media only screen and (max-device-width: 374px) {
+        
+        .container {
+            width: 320px;
+                    padding: 0 16px;
+        }
+        .about-content-bg {
+            padding-top: 320px;
+        }
+        .open {
+            width: 286px;
+        }
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+    }
+
+    @media only screen and (max-device-width: 319px) {
+        .container {
+            width: 280px;
+            padding: 0 5px;
+        }
+        .header__title-icon {
+            margin-top: 20px;
+        }
+        .about-content-bg {
+            padding-top: 280px;
+        }
+        .open {
+            width: 270px;
+        }
+        .footer-nav {
+            column-gap: 30px;
+        }
+       /* styles for mobile browsers smaller than 319px; (Galaxy Fold) */
+    }
+
+    @media only screen and (device-width: 768px) {
+       /* default iPad screens */
+    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+    }
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+    }
+
+    /* @media screen and (min-width: 320px) and (max-width: 1024px) and (orientation: landscape) { html { transform: rotate(-90deg); transform-origin: left top; width: 100vh; overflow-x: hidden; position: absolute; top: 100%; left: 0; } } */
+    @media only screen and (min-width: 415px) and (max-width:865px) and (orientation: landscape)  {
+        body{display:none} html:before{content:'Переверните устройство в портретный режим или откройте сайт с компьютера.';position:fixed;top:0;left:0;right:0;bottom:0;margin:auto;background:#fff;z-index:999;text-align:center;width:80%;height:100px} 
+        }
