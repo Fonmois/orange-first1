@@ -273,8 +273,6 @@ button.button:active {
     color: hsl(213, 9%, 39%)
 }
 
-
-
 .photo {
     border-radius: 50%;
     margin-bottom: 41px;
@@ -293,6 +291,12 @@ button.button:active {
     padding-top: 16px;
     color: hsl(210, 4%, 67%);
     font-size: 14px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 67px;
 }
 
 .client__margin {
