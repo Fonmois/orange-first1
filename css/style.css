@@ -188,6 +188,9 @@ button.button:active {
     background: #FDF1B7;
     z-index: -1;
 }
+.about__brand-more:hover::before  {
+    background: #FBD80A;
+}
 
 .about__audience-more {
     font-family: 'Fraunces', serif;
@@ -207,6 +210,10 @@ button.button:active {
     background: #FEDACE;
     z-index: -1;
 }
+.about__audience-more:hover::before {
+    background: #FF7A5F;
+}
+
 
 .bg3 {
     background: url(../images/mobile/image-graphic-design.jpg);
