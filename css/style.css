@@ -10,6 +10,8 @@ body {
     font-size: 18px;
     font-family: 'Barlow', sans-serif, Arial;
     font-weight: 600;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .d-none {
@@ -24,23 +26,20 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0 24px;
-    width: 375px;
-}
-
-.wrapper {
-    padding: 71.7% 0;
-}
-
-.header-bg  {
-    height: 100vh; 
     width: 100%;
-    position: absolute;
-    top: 0;
-    /* left: 0; */
-    background: url(../images/mobile/image-header.jpg); 
-     background-repeat: no-repeat; 
-    background-size: contain; 
+}
 
+/* .wrapper {
+    padding: 71.7% 0;
+} */
+
+.header {
+    height: 100vh;
+    width: 375px;
+    background: url(../images/mobile/image-header.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center bottom 0;
 }
 
 .button {
@@ -62,18 +61,21 @@ button.button:active {
     padding-top: 3px;
 }
 
+.desktop-flex {
+    padding: 24px 0;
+}
+
 .nav_logo{
     height: 24;
     width: 128;
 }
 
 .nav-burger {
-    padding-top: 32px;
     display: flex;
     justify-content: space-between;
 }
 
-.open {
+.list-menu.open {
     margin-top: 40px;
     background: hsl(0, 0%, 100%);
     position: relative;
@@ -82,7 +84,7 @@ button.button:active {
     z-index: 1;
 }
 
-.open::before {
+.list-menu.open::before {
     content: ''; 
     position: absolute;
     border: 10px solid transparent;
@@ -91,11 +93,16 @@ button.button:active {
     border-bottom: 10px solid hsl(0, 0%, 100%);
 }
 
+.list-menu.open .nav_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
 .nav-block {
     display: flex;
     flex-direction:column;
     text-align: center;
-    padding-top: 30px;
     row-gap: 30px; 
 }
 
@@ -106,7 +113,6 @@ button.button:active {
 .header_title {
     margin-top: 100px;
     letter-spacing: 5px;
-    max-width: 375px;
     font-family: 'Fraunces', serif;
     font-weight: 900;
     font-size: 35px;
@@ -120,18 +126,10 @@ button.button:active {
     position: absolute;
     padding: 0;
     margin: 0;
-    left: 45%;
-    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     margin-top: 50px;
-}
-
-.wrapper-about {
-    padding-bottom: 83.2%;
-}
-
-.wrapper-about-end {
-    padding-bottom: 159.9%;
 }
 
 .bg1 {
@@ -209,8 +207,8 @@ button.button:active {
 
 .bg3 {
     background: url(../images/mobile/image-graphic-design.jpg);
-    padding-top: 0;
-    padding-bottom: 900px;
+    /* padding-top: 0;
+    padding-bottom: 900px; */
 }
 
 .about-content-bg {
@@ -242,20 +240,20 @@ button.button:active {
 .bg4 {
     background: url(../images/mobile/image-photography.jpg);
     padding-top: 0;
-    padding-bottom: 900px;
 }
 
 .image {
-    height: 450px; 
-    width: 100%;
-    position: absolute; 
+    min-height: 450px; 
+    width: 375px;
     background-repeat: no-repeat; 
-    background-size: contain; 
+    background-size: cover; 
+    background-position: center;
     /* top: 0;
     left: 0; */
 }
 
 .testimonials {
+    width: 375px;
     text-align: center;
 }
 
@@ -303,27 +301,20 @@ button.button:active {
     padding-bottom: 96px;
 }
 
-footer {
+.footer {
     background-color: #90D4C5;
+    width: 375px;
+    height: 350px;
 }
 
-.footer-wrapper {
-        width: 100%;
-}
-
-.footer-grid {
+.footer__grid {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.footer-bg {
-    background-color: #90D4C5;
-    height: 350px;
-}
-
-.footer-logo {
+.footer__logo {
     padding-top: 67px;
     padding-bottom: 80px;  
     filter: invert(36%) sepia(74%) saturate(299%) hue-rotate(116deg) brightness(91%) contrast(97%);
@@ -333,7 +324,7 @@ footer {
     height: 34px;
 }
 
-.footer-nav {
+.footer__nav {
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -342,11 +333,11 @@ footer {
     padding-bottom: 87px;
 } 
 
-.footer-nav a {
+.footer__nav a {
     color: hsl(168, 34%, 41%);
 }
 
-.footer-nav a:hover {
+.footer__nav a:hover {
     color: hsl(0, 0%, 100%);
 }
 
@@ -359,6 +350,7 @@ footer {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(172deg) brightness(200%) contrast(200%);
 }
 .gallery {
+    width: 375px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 

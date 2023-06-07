@@ -1,17 +1,16 @@
-screen.orientation.lock('portrait');
+const nav = document.getElementById('nav');
+const navBtn = document.getElementById('navBtn');
+const title = document.getElementById('title');
 
-const nav = document.querySelector('#nav');
-const navBtn = document.querySelector('#navBtn');
-const title = document.querySelector('#title');
+navBtn.addEventListener("click", () => {
+    nav.classList.toggle('open');
 
-
-navBtn.onclick = () => {
-    if(nav.classList.toggle('open')) {
-          (nav.classList.remove('d-none'), 
-          title.classList.remove('d-enable'));
+    if (nav.classList.contains('open')) {
+        nav.classList.remove('d-none');
+        title.classList.remove('d-enable');
     }
     else {
-        (nav.classList.toggle('d-none'),
-        title.classList.toggle('d-enable'));
+        nav.classList.add('d-none');
+        title.classList.add('d-enable');
     }
-}
+})
