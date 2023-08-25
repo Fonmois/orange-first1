@@ -269,7 +269,7 @@
         }       
         .header {
             background-size: cover;
-            background-position: center center;
+            background-position: center bottom;
             /* background-size: 100% auto; */
              /* Ширина и длина header background */  
         }        
